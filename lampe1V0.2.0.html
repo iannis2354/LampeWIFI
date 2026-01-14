@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LightControl</title>
+
+<!-- IRO.JS -->
+<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #CFFFE5;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+header {
+  background: #433633;
+  color: #CFFFE5;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.on { background: #226F54; }
+.off { background: #F71735; }
+
+.led-container {
+  position: relative;
+  width: 260px;
+  height: 220px;
+  margin: 30px auto;
+}
+
+.led {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(120,120,120);
+  border: 3px solid #433633;
+  position: absolute;
+  cursor: pointer;
+}
+
+#led1 { top: 0; left: 100px; }
+
+#picker {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.led.glow {
+  box-shadow:
+    0 0 15px currentColor,
+    0 0 30px currentColor,
+    0 0 50px currentColor;
+}
+
+.inactive {
+  background: #999 !important;
+  color: #eee;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  LightControl – Contrôle de lampe à distance
+</header>
+
+<main>
+
+  <div class="controls">
+    <button id="btnOn" class="on inactive" onclick="allumer()">ON</button>
+    <button id="btnOff" class="off" onclick="eteindre()">OFF</button>
+  </div>
+
+  <div class="led-container">
+    <div class="led" id="led1" onclick="selectLed('led1')"></div>
+  </div>
+
+  <!-- VRAI COLOR PICKER CIRCULAIRE -->
+  <div id="picker"></div>
+
+</main>
+
+<script>
+let ledActive = null;
+let lampeAllumee = false;
+let derniereCouleur = "#CFFFE5";
+
+/* Création roue RGB */
+const colorPicker = new iro.ColorPicker("#picker", {
+  width: 220,
+  color: "#888888",
+  layout: [
+    { component: iro.ui.Wheel },
+    { component: iro.ui.Slider, options: { sliderType: 'value' } }
+  ]
+});
+
+/* Changement couleur en temps réel */
+colorPicker.on("color:change", function(color) {
+  if (!ledActive) return;
+
+  const couleurRGB = color.rgbString;
+
+  // changer la LED
+  ledActive.style.background = couleurRGB;
+
+  // mémoriser la couleur
+  derniereCouleur = couleurRGB;
+
+  // changer le fond si la lampe est allumée
+  if (lampeAllumee) {
+    document.body.style.background = couleurRGB;
+  }
+});
+
+
+/* Sélection LED */
+function selectLed(id) {
+  // enlever le glow des autres LEDs
+  document.querySelectorAll(".led").forEach(led => {
+    led.classList.remove("glow");
+  });
+
+  ledActive = document.getElementById(id);
+
+  // récupérer la couleur calculée par le navigateur
+  const couleur = getComputedStyle(ledActive).backgroundColor;
+
+  try {
+    colorPicker.color.set(couleur);
+  } catch (e) {
+    // sécurité si jamais la couleur est invalide
+    colorPicker.color.set("#888888");
+  }
+
+  // glow seulement si la lampe est allumée
+  if (lampeAllumee) {
+    ledActive.classList.add("glow");
+  }
+}
+
+
+/* ON / OFF */
+function allumer() {
+  lampeAllumee = true;
+
+  document.body.style.background = derniereCouleur;
+
+  document.getElementById("btnOn").classList.remove("inactive");
+  document.getElementById("btnOff").classList.add("inactive");
+
+  if (ledActive) {
+    ledActive.classList.add("glow");
+  }
+}
+
+
+function eteindre() {
+  lampeAllumee = false;
+
+  document.body.style.background = "#CFFFE5";
+
+  document.getElementById("btnOn").classList.add("inactive");
+  document.getElementById("btnOff").classList.remove("inactive");
+
+  document.querySelectorAll(".led").forEach(led => {
+    led.classList.remove("glow");
+  });
+}
+
+
+</script>
+
+</body>
+</html>
