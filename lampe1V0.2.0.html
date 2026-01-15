@@ -47,6 +47,17 @@ button {
   cursor: pointer;
 }
 
+a {
+  flex: 1;
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  background: #000000;
+}
+
 .on { background: #226F54; }
 .off { background: #F71735; }
 
@@ -68,6 +79,8 @@ button {
 }
 
 #led1 { top: 0; left: 100px; }
+#led2 { bottom: 0; left: 0; }
+#led3 { bottom: 0; right: 0; }
 
 #picker {
   display: flex;
@@ -97,6 +110,7 @@ button {
 </header>
 
 <main>
+  <a class="a" href="debug.html">Debug</a>
 
   <div class="controls">
     <button id="btnOn" class="on inactive" onclick="allumer()">ON</button>

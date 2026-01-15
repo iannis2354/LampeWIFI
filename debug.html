@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LightControl</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #CFFFE5;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+header {
+  background: #433633;
+  color: #CFFFE5;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+button {
+    flex: 1;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    }
+
+.controls {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.active {
+    background: #226F54 !important;
+    color: #eee;
+}
+
+.inactive {
+    background: #F71735 !important;
+    color: #eee;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  LightControl – Debug
+</header>
+
+<main>
+
+  <div class="controls">
+    <button id="Photo" class="inactive" onclick="activer(id)">PhotoRésistance</button>
+    <button id="btnOff" class="active" onclick="activer(id)">OFF</button>
+  </div>
+
+</main>
+
+<script>
+
+/* ON / OFF */
+function activer(id) {
+    if(document.getElementById(id).className == "active") {
+        document.getElementById(id).classList.remove("active");
+        document.getElementById(id).classList.add("inactive");
+    }
+    else {
+        document.getElementById(id).classList.remove("inactive");
+        document.getElementById(id).classList.add("active");
+    }
+}
+
+
+</script>
+</body>
+</html>
