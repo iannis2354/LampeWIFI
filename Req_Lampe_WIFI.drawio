@@ -1,0 +1,133 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.1">
+  <diagram name="Page-1" id="lC0BTrpR7YUY09LhV7Ss">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kOxyMnHm6hMU2Ra3DgPT-1" parent="1" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=268;strokeWidth=2;align=center;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:7px;text-align:left;&quot;&gt;&lt;b style=&quot;text-wrap-mode: wrap;&quot;&gt;req&lt;/b&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;&amp;nbsp;ReqDiagram [Requis d&#39;une lampe Réseau]&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="630" width="790" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-7" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=center;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;Lampe Réseau" vertex="1">
+          <mxGeometry height="60" width="120" x="355" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-31" edge="1" parent="1" source="yre-AwqDYY2bNvEntpD6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=circlePlus;endFill=0;" target="yre-AwqDYY2bNvEntpD6-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-9" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=center;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;Application" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-19" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="72" width="230" x="60" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-20" parent="yre-AwqDYY2bNvEntpD6-19" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="230" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-21" parent="yre-AwqDYY2bNvEntpD6-19" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Communication" vertex="1">
+          <mxGeometry height="18" width="230" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-22" parent="yre-AwqDYY2bNvEntpD6-19" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-23" parent="yre-AwqDYY2bNvEntpD6-19" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="text=&quot;Le système doit communiquer via un réseau WIFI&quot;" vertex="1">
+          <mxGeometry height="28" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-24" parent="yre-AwqDYY2bNvEntpD6-19" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;SC.&quot;" vertex="1">
+          <mxGeometry height="30" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-32" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="100" width="200" x="340" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-33" parent="yre-AwqDYY2bNvEntpD6-32" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-34" parent="yre-AwqDYY2bNvEntpD6-32" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Langage de l&#39;IHM" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-35" parent="yre-AwqDYY2bNvEntpD6-32" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-36" parent="yre-AwqDYY2bNvEntpD6-32" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;L&#39;IHM doit être programmer en Python&quot;" vertex="1">
+          <mxGeometry height="28" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-37" parent="yre-AwqDYY2bNvEntpD6-32" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;APP_LANG.&quot;" vertex="1">
+          <mxGeometry height="30" width="200" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-39" edge="1" parent="1" source="yre-AwqDYY2bNvEntpD6-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=circlePlus;endFill=0;" target="yre-AwqDYY2bNvEntpD6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-40" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="100" width="200" x="550" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-41" parent="yre-AwqDYY2bNvEntpD6-40" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-42" parent="yre-AwqDYY2bNvEntpD6-40" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Contrôle de l&#39;IHM" vertex="1">
+          <mxGeometry height="18" width="200" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-43" parent="yre-AwqDYY2bNvEntpD6-40" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-44" parent="yre-AwqDYY2bNvEntpD6-40" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;L&#39;IHM doit pouvoir allumer et éteindre la lampe&quot;" vertex="1">
+          <mxGeometry height="28" width="200" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-45" parent="yre-AwqDYY2bNvEntpD6-40" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=&quot;APP_CONTR.&quot;" vertex="1">
+          <mxGeometry height="30" width="200" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-47" edge="1" parent="1" source="yre-AwqDYY2bNvEntpD6-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=circlePlus;endFill=0;" target="yre-AwqDYY2bNvEntpD6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yre-AwqDYY2bNvEntpD6-84" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="420" as="sourcePoint" />
+            <mxPoint x="415" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-2" parent="1" style="fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;" value="" vertex="1">
+          <mxGeometry height="130" width="210" x="300" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-3" parent="gng3KVNKMQdgG9Es9qmt-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingTop=3;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="16" width="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-4" parent="gng3KVNKMQdgG9Es9qmt-2" style="html=1;align=center;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontStyle=1" value="Système de secours&amp;nbsp;" vertex="1">
+          <mxGeometry height="18" width="210" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-5" parent="gng3KVNKMQdgG9Es9qmt-2" style="line;strokeWidth=0.25;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="8" width="210" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-6" parent="gng3KVNKMQdgG9Es9qmt-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="text=&quot;Le système doit pouvoir fonctionner sans être connecter a aucune HMI&quot;" vertex="1">
+          <mxGeometry height="58" width="210" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-7" parent="gng3KVNKMQdgG9Es9qmt-2" style="html=1;align=left;spacing=0;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;spacingLeft=10;" value="Id=SS&quot;" vertex="1">
+          <mxGeometry height="30" width="210" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-21" edge="1" parent="1" source="gng3KVNKMQdgG9Es9qmt-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=6;endArrow=circlePlus;endFill=0;targetPerimeterSpacing=0;" target="yre-AwqDYY2bNvEntpD6-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="120" />
+              <mxPoint x="415" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-31" edge="1" parent="1" source="gng3KVNKMQdgG9Es9qmt-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=circlePlus;startFill=0;" target="yre-AwqDYY2bNvEntpD6-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="400" />
+              <mxPoint x="175" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-14" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=center;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;Transmission de l&#39;information&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="170" x="110" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="gng3KVNKMQdgG9Es9qmt-26" edge="1" parent="1" source="gng3KVNKMQdgG9Es9qmt-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=circlePlus;endFill=0;" target="gng3KVNKMQdgG9Es9qmt-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="400" />
+              <mxPoint x="195" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
